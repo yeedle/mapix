@@ -16,7 +16,7 @@ devtools::install_github("r-spatial/mapview")
 devtools::install_github("r-spatial/mapedit")
 ```
 
-Download the scripts in `src` directory and place them in your `/usr/local/bin/` directory. Give yourself permission to read and execute the scripts (`sudo chmos 755 /usr/local/bin/Rint` etc). You're all set!
+Download the scripts in `src` directory and place them in your `/usr/local/bin/` directory. Give yourself permission to read and execute the scripts (e.g. `sudo chmod 755 /usr/local/bin/Rint` etc). You're all set!
 
 
 ## Usage
