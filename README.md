@@ -24,15 +24,19 @@ Download the scripts in `src` directory and place them in your `/usr/local/bin/`
 
 `Rint` is a trick by [Jon Gjengset](https://github.com/jonhoo) to get R to run a script interactively. Check out [his explanation for how it works](https://thesquareplanet.com/blog/interactive-r-scripts/). I changed it slightly to allow the R script to accept command line arguments.
 
+### mapcreate
+Usage: `mapcreate filename`
+
+This will create a new file with the given filename with the drawn features. Make sure it has a valid extension like '.geojson', '.shp', '.kml', etc.
+
 ### mapupdate
 Usage: `mapupdate input_filename [output_filename]`
 
-If you call `mapupdate` with just one filename, your edits will overwrite the original file with your edits. If you call it with two filenames, the first will be used as the input file, and the second will be the new file where the edits will be written to.
+This is used to edit an existing file. If you call `mapupdate` with just one filename, your edits will overwrite the original file with your edits. If you call it with two filenames, the first will be used as the input file, and the second will be the new file where the edits will be written to.
 
 ### mapview
 Usage: `mapview filename`
 
-### mapcreate
-Usage: `mapcreate filename`
+If you just want to inspect a file visually, use `mapview`. 
 
-This will create a new file with the given filename with the drawn features.
+All of the commands should open in the default browser.
