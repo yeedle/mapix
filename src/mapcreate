@@ -7,7 +7,7 @@ if (length(args) < 1 | length(args) > 1) {
   q()
 }
 
-tryCatch({ sf::st_write(mapedit::editMap(), args[1])},
+tryCatch({ sf::st_write(mapedit::editMap(), args)},
          error = function(e) { write(e, stderr()) },
          finally = { q() }
 )
