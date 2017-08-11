@@ -30,12 +30,12 @@ Usage: `mapcreate `_`filename`_
 This will create a new file with the given filename with the drawn features. Make sure it has a valid extension like '.geojson', '.shp', '.kml', etc.
 
 ### mapupdate
-Usage: `mapupdate input_filename [output_filename]`
+Usage: `mapupdate `_`input_filename`_ _`[output_filename]`_
 
 This is used to edit an existing file. If you call `mapupdate` with just one filename, your edits will overwrite the original file with your edits. If you call it with two filenames, the first will be used as the input file, and the second will be the new file where the edits will be written to.
 
 ### mapview
-Usage: `mapview filename`
+Usage: `mapview `_`filename`_
 
 If you just want to inspect a file visually, use `mapview`. 
 
