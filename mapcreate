@@ -1,0 +1,13 @@
+#!/usr/local/bin/Rint
+
+args <- commandArgs(TRUE)
+
+if (length(args) < 1 | length(args) > 1) {
+  write("Usage: mapcreate output_filename", stderr())
+  q()
+}
+
+tryCatch({ sf::st_write(mapedit::editMap(), args[1])},
+         error = function(e) { write(e, stderr()) },
+         finally = { q() }
+)
