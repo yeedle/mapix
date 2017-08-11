@@ -1,0 +1,11 @@
+#!/usr/local/bin/Rint
+
+args <- commandArgs(trailingOnly=TRUE)
+if (length(args) < 1 | length(args) > 1) {
+stop("USAGE: mapview [filename]")
+}
+
+mapview::mapview(sf::st_zm(sf::st_read(args)))
+
+Sys.sleep(1)
+q()

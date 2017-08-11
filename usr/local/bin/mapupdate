@@ -1,0 +1,17 @@
+#!/usr/local/bin/Rint
+
+args <- commandArgs(TRUE)
+if (length(args) < 1 | length(args) > 2) {
+  write("Usage: mapedit input_filename [output_filename]", stderr())
+  q()
+}
+
+tryCatch(
+  expr = {
+    sf::st_write(mapedit::editFeatures(sf::st_read(args[1])),
+                 ifelse(length(args) == 2, args[2], args[1]),
+                 delete_dsn = length(args) == 1)
+  },
+  error = function(e) write(e, stderr()),
+  finally = { q() }
+)

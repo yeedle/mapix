@@ -1,0 +1,5 @@
+Package: mapix
+Version: 0.1
+Maintainer: Abe Neuwirth
+Architecture: all
+Description: r-spatial for the command line
