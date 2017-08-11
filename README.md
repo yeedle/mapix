@@ -2,6 +2,7 @@
 A set of simple bash commands that bring r-spatial tools to the Linux command line. My motivation for writing these were a bunch of geojson files I had to go through, some of them just needed visual inspection, others needed some editing.
 
 ## Installation
+### Installing R and r-spatial tools
 These scripts assume that [R](https://www.r-project.org/) along with the packages [sf](https://github.com/r-spatial/sf), [mapview](https://github.com/r-spatial/mapview), and [mapedit](https://github.com/r-spatial/mapedit) are all installed already. To install R, downlaod from [your favorite CRAN mirror](https://github.com/r-spatial/mapedit). Once you have R installed, open an R session, and install `sf`, `mapview`, and `mapedit` by running the following command:
 
 ```r
@@ -15,8 +16,8 @@ devtools::install_github("r-spatial/sf")
 devtools::install_github("r-spatial/mapview")
 devtools::install_github("r-spatial/mapedit")
 ```
-
-Download the scripts in `src` directory and place them in your `/usr/local/bin/` directory. Give yourself permission to read and execute the scripts (e.g. `sudo chmod 755 /usr/local/bin/Rint` etc). You're all set!
+### Installing mapix
+For debian-based systems, download the `mapix.deb` file and install with `apt`. Otherwise download the scripts in the `src` directory and place them in your `/usr/local/bin/` directory. Give yourself permission to read and execute the scripts (e.g. `sudo chmod 755 /usr/local/bin/Rint` etc) and you're all set!
 
 
 ## Usage
