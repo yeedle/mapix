@@ -22,7 +22,7 @@ Download the scripts in `src` directory and place them in your `/usr/local/bin/`
 ## Usage
 ### Rint
 
-`Rint` is a trick by [Jon Gjengset](https://github.com/jonhoo) to get R to run a script interactively. Check out [his explanation for how it works](https://thesquareplanet.com/blog/interactive-r-scripts/). I changed it slightly to allow the R script to accept command line arguments.
+`Rint` is a trick by [Jon Gjengset](https://github.com/jonhoo) to get R to run a script interactively. Check out [his explanation for how it works](https://thesquareplanet.com/blog/interactive-r-scripts/). I changed it slightly to allow the R script to accept command line arguments. The commands are all executed with `Rint`.
 
 ### mapcreate
 Usage: `mapcreate filename`
